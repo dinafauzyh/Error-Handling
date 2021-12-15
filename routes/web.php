@@ -21,6 +21,9 @@ Route::get('/', function () {
 
 // Route::get('/users', [UserController::class, 'index'])->name('users.index');
 
-Route::post('/users/search', [UserController::class, 'search'])->name('users.search');
+// Route::post('/users/search', [UserController::class, 'search'])->name('users.search');
 
-Route::get('/malasngoding/{nama}', [UserController::class, 'index']);
+// Route::get('/malasngoding/{nama}', [UserController::class, 'index']);
+
+Route::get('/users', [UserController::class, 'index'])->name('users.index');
+Route::post('/users/search', [UserController::class, 'search'])->name('users.search');
